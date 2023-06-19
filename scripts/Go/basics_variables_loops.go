@@ -13,6 +13,8 @@ import (
 func main() {
 	fmt.Println("Hello World") //fmt.Println is used to output something onto the screen//
 
+	//Variables//
+
 	var a = "Hello" //Use var to define a variable//
 	//var b = 10//
 	//var b int = 10. Using int at the end would specify that the vairable is an integer//
@@ -21,4 +23,50 @@ func main() {
 	fmt.Println(reflect.TypeOf(a)) //This print the type of variable that a is//
 	//fmt.Println(reflect.TypeOf(b))//
 	//fmt.Println(reflect.TypeOf(PI))//
+
+//Booleans//
+
+	//b := true//
+	//b:= false//
+	//boolens are lowercase in Go//
+
+//Operators//
+
+	fmt.Println(a..:true && true) //and/
+	fmt.Println(a..:true && false)
+	fmt.Println(a..:true || true) //or//
+	fmt.Println(a..:true || false)
+	fmt.Println(a..!false) //not false//
+
+	//Basic arithmetic operators//
+	fmt.Println(20 + 10) //addition//
+	fmt.Println(20 - 10) //subtraction//
+	fmt.Println(20 * 10) //multiplication//
+	fmt.Println(20 % 10) //division//
+
+	//Increment & Decrement Operator//
+	a:= 0
+
+	a++
+	//a += 1   # alternative 1
+	//a = a + 1   # alternative 2//
+
+	a--
+	//a -= 1   # alternative 1
+	//a = a 1 1   # alternative 2//
+
+	fmt.Print(a++)
+	fmt.Print(a--)
+
+	//Example//
+	a := 0
+	a +=10
+	a -= 5
+	a *= 2
+	//running the 4 lines above should give a solution of 10//
+
+
+
+
+
 }
