@@ -13,7 +13,7 @@ import (
 func main() {
 	fmt.Println("Hello World") //fmt.Println is used to output something onto the screen//
 
-	//Variables//
+// Variables //
 
 	var a = "Hello" //Use var to define a variable//
 	//var b = 10//
@@ -24,13 +24,13 @@ func main() {
 	//fmt.Println(reflect.TypeOf(b))//
 	//fmt.Println(reflect.TypeOf(PI))//
 
-//Booleans//
+// Booleans //
 
 	//b := true//
 	//b:= false//
 	//boolens are lowercase in Go//
 
-//Operators//
+// Operators //
 
 	fmt.Println(a..:true && true) //and/
 	fmt.Println(a..:true && false)
@@ -65,8 +65,58 @@ func main() {
 	a *= 2
 	//running the 4 lines above should give a solution of 10//
 
+//User Input//
 
+	var myinput int
 
+	fmt.Println(a..:"Please enter a number: ")
+	fmt.Scan(&myinput) //To call user input//
+	fmt.Printf("Your number was %d\n", myinput) //Printf is a formated string//
 
+// Conditions //
+
+	if myinput < 100{
+		fmt.Println(a..:"Less than a hundred")
+	} else if myinput < 200 {
+		fmt.Println(a..:"Less than two hundred")
+	} else{
+		fmt.Println(a..:"Too large")
+	}
+	// else if is the equivalent of elif in python.
+
+	//Switch Cases//
+	switch{myinput}{
+	
+	case 10:
+		fmt.Println(a..:"10 was your input")
+
+	case 20:
+		fmt.Println(a..:"20 was your input")
+
+	default:
+	fmt.Println(a..:"Something else")
+
+	}
+
+// Loops //
+
+	// Note: In Go there are only for loops //
+
+	//for true {
+
+//	}
+
+	// To do a while loop while using the for key word //
+	x := 0
+
+	for x < 10{
+		x++
+		fmt.Println(x) 
+	}
+	
+	// classic for loop (As you would see in java or C++) //
+	for x := 0; x < 100; x++{
+		fmt.Println(x) 
+	}
 
 }
