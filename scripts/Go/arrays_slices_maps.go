@@ -54,6 +54,32 @@ func main() {
 	fmt.Println(cp1[1:4]) // This means print 1 , 2, 3  (Just like in Python) //
 	// Go cannot uses negative numbers like Python //
 
-
+	// Maps //
+	
 	// Maps --> Dictionaries in Python
+
+	m1 := make(map[string]int) // Using strings to reference integers //
+
+	m1["Key1"] = 20
+	m1["Key2"] = 30
+	m1["Some other key"] = 60
+	//m1["Non-Existent Key"] = 0//
+	fmt.Println(m1) 
+	fmt.Println(m1["Key1"]) // To print a specific thing  // 
+
+	//When trying to access a key from a dictonaries, you can possibly get two values.//
+	// If you run fmt.Println(m1["Non-Existent Key"]), you would get zero instead of error. //
+	
+	// To see if a key is existent or not you can get the value and present. //
+
+	value, present := m1["Non-Existent Key"]
+	fmt.Println(value)
+	fmt.Println(present)
+
+	// To delete a key //
+	
+	//delete(m1, "Key2")//
+	
+	//fmt.Println(m1)//
+	 
 }
