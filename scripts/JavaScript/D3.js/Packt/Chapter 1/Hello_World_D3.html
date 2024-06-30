@@ -11,14 +11,14 @@
 <script>
     const array = [100, 200, 300, 350, 375, 400, 500];
 
-    d3.select("#chart")
-            .selectAll("circle")
-            .data([100])
-            .enter()
-            .append("circle")
-            .attr("r", 10)
-            .attr("cy", 100)
-            .attr("cx", d => d)
+    d3.select("#chart") // selects the svg element by id (like JQuery)
+            .selectAll("circle") //declares the elements we would like to create
+            .data([100]) // sets the data to drive the creatin of the elements
+            .enter() // creates a selection to add elements per data item
+            .append("circle") //appends an element of this type to each data item
+            .attr("r", 10) // sets "r" attribute
+            .attr("cy", 100) // sets "cy" attribute
+            .attr("cx", d => d) // sets "cx" attribute (same as function (d)) {return d; }
 </script>
 
 </body>
